@@ -1,0 +1,17 @@
+@import '../../../public/fonts/fonts.scss';
+
+.fav_layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1F1F;
+  width: 100%;
+  padding: 40px 40px;
+}
+
+.fav_title {
+  font-size: 40px;
+  color: #E1E1E1;
+  font-family: Mont-Bold, sans-serif;
+  border-bottom: 1px solid #585858;
+  padding-bottom: 75px;
+}

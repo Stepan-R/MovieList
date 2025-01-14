@@ -1,0 +1,59 @@
+@import '../../../public/fonts/fonts.scss';
+
+.card_block {
+  min-height: 340px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #2A2A2A;
+  position: relative;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
+.card_image {
+  width: 150px;
+  height: 225px;
+  object-fit: contain;
+}
+
+.card_rate {
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+  padding-right: 5px;
+}
+
+.card_title {
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+  font-size: 18px;
+  padding: 5px 5px;
+}
+
+.card_year {
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+.add_to_fav {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.delete_card {
+  width: 25px;
+  height: 30px;
+  background-color: #DCDCDC;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}

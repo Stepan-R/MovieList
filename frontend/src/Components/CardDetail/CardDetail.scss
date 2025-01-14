@@ -1,0 +1,189 @@
+@import '../../../public/fonts/fonts.scss';
+
+body {
+  background-color: #1F1F1F;
+}
+
+.detail_layout {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_image {
+  height: 444px;
+  width: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.detail_main_block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.detail_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title_year_block {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.detail_title {
+  font-size: 40px;
+  font-family: Mont-Bold, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_year {
+  font-size: 20px;
+  font-family: Mont-Bold, sans-serif;
+  color: #E1E1E1;
+  padding-top: 12.5px;
+}
+
+.genre_time_block {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.detail_genre_and_time {
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_director {
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+}
+
+.overview_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail_overview_title {
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_overview_info {
+  font-size: 15px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+  font-style: italic;
+}
+
+.score_block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail_score_title {
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_score_number {
+  height: 60px;
+  width: 70px;
+  background-color: #585858;
+  color: #F33F3F;
+  border-radius: 5px;
+  border: 1px solid #F33F3F;
+  font-family: Mont-SemiBold, sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.detail_add_to_fav {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F33F3F;
+  color: #141414;
+  font-family: Mont-Semibold, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.detail_add_to_fav:hover {
+  background-color: #EC9292;
+}
+
+.detail_cast_block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.detail_cast_title {
+  font-size: 20px;
+  font-family: Mont_Semibold, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_cast {
+  font-size: 15px;
+  font-family: Mont, sans-serif;
+  color: #E1E1E1;
+}
+
+.detail_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.update_poster {
+  width: 300px;
+  height: 444px;
+  background-color: #1F1F1F;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  color: #E1E1E1;
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+}
+
+.update_input {
+  width: 200px;
+  height: 50px;
+  background-color: #1F1F1F;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  color: #E1E1E1;
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  padding-left: 20px;
+}
+
+.update_textarea {
+  min-width: 300px;
+  min-height: 50px;
+  background-color: #1F1F1F;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  color: #E1E1E1;
+  font-size: 20px;
+  font-family: Mont, sans-serif;
+  padding-left: 20px;
+}
