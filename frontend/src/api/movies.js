@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://movie-list-hpdi.vercel.app/';
+axios.defaults.baseURL = 'http://localhost:3005';
 
 export function getAll() {
   return axios.get('/movies')
