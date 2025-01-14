@@ -217,7 +217,7 @@ export const CardDetail = () => {
         <input  
           name='cast' 
           type='text' 
-          className='add_input' 
+          className='update_input' 
           value={cast}
           onChange={handleInputChange}
           placeholder="Please add movie cast"

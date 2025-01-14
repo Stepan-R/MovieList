@@ -1,4 +1,10 @@
+@import '../src/mixins/mixins.scss';
+
 .app_layout {
   display: flex;
   flex-direction: row;
+
+  @include on-mobile {
+    flex-direction: column;
+  }
 }

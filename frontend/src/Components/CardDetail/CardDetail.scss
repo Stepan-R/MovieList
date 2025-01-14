@@ -1,4 +1,5 @@
 @import '../../../public/fonts/fonts.scss';
+@import '../../mixins/mixins.scss';
 
 body {
   background-color: #1F1F1F;
@@ -21,6 +22,10 @@ body {
   display: flex;
   flex-direction: row;
   gap: 40px;
+
+  @include on-mobile {
+    flex-direction: column;
+  }
 }
 
 .detail_info {
@@ -174,6 +179,11 @@ body {
   font-size: 20px;
   font-family: Mont, sans-serif;
   padding-left: 20px;
+
+  @include on-mobile {
+    width: 100px;
+    font-size: 16px;
+  }
 }
 
 .update_textarea {
@@ -186,4 +196,9 @@ body {
   font-size: 20px;
   font-family: Mont, sans-serif;
   padding-left: 20px;
+
+  @include on-mobile {
+    width: 100px;
+    font-size: 16px;
+  }
 }

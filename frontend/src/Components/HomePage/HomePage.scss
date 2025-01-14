@@ -1,10 +1,10 @@
 @import '../../../public/fonts/fonts.scss';
+@import '../../mixins/mixins.scss';
 
 .home_layout {
   display: flex;
   flex-direction: column;
   background-color: #1F1F1F;
-  width: 100%;
   padding: 40px 40px;
 }
 
@@ -12,6 +12,10 @@
   font-size: 40px;
   color: #E1E1E1;
   font-family: Mont-Bold, sans-serif;
+
+  @include on-mobile {
+    font-size: 26px;
+  }
 }
 
 .filter_block {
@@ -50,7 +54,7 @@
 
 .carts_layout {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
   gap: 40px 40px;
   margin-top: 40px;
 }

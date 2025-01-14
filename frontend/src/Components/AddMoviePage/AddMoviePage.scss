@@ -1,10 +1,13 @@
 @import '../../../public/fonts/fonts.scss';
+@import '../../mixins/mixins.scss';
 
 .add_movie_layout {
   display: flex;
   flex-direction: column;
   background-color: #1F1F1F;
   padding: 40px 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .add_poster {
@@ -28,6 +31,10 @@
   font-family: Mont-Bold, sans-serif;
   color: #E1E1E1;
   margin-bottom: 40px;
+
+  @include on-mobile {
+    font-size: 26px;
+  }
 }
 
 .add_info_block {
@@ -46,10 +53,15 @@
   font-size: 20px;
   font-family: Mont, sans-serif;
   padding-left: 20px;
+
+  @include on-mobile {
+    width: 200px;
+    font-size: 16px;
+  }
 }
 
 .add_textarea {
-  min-width: 600px;
+  width: 600px;
   min-height: 50px;
   background-color: #1F1F1F;
   border: 1px solid #E1E1E1;
@@ -58,6 +70,11 @@
   font-size: 20px;
   font-family: Mont, sans-serif;
   padding-left: 20px;
+
+  @include on-mobile {
+    width: 200px;
+    font-size: 16px;
+  }
 }
 
 .add_textarea::placeholder {

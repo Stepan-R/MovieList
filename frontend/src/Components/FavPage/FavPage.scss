@@ -1,10 +1,10 @@
 @import '../../../public/fonts/fonts.scss';
+@import '../../mixins/mixins.scss';
 
 .fav_layout {
   display: flex;
   flex-direction: column;
   background-color: #1F1F1F;
-  width: 100%;
   padding: 40px 40px;
 }
 
@@ -14,4 +14,8 @@
   font-family: Mont-Bold, sans-serif;
   border-bottom: 1px solid #585858;
   padding-bottom: 75px;
+
+  @include on-mobile {
+    font-size: 26px;
+  }
 }
