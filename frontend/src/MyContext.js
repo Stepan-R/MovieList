@@ -13,7 +13,7 @@ export const MyProvider = ({ children }) => {
 
   useEffect(() => {
     loadMovies();
-  });
+  }, []);
 
   const remove = (id) => {
     api.remove(id);

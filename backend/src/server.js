@@ -2,6 +2,31 @@ const express = require('express');
 
 const app = express();
 const cors = require('cors');
+
+app.use(cors());
+
+// const corsOptions = {
+//   origin: 'http://localhost:3000',
+//   methods: 'GET,PATCH,POST,DELETE',
+//   credentials: true,
+// };
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Methods', 'GET,PATCH,POST,DELETE');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  next();
+});
+
+app.options('*', cors(corsOptions)); 
+
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const port = 3005;
@@ -27,8 +52,6 @@ async function connectToDatabase() {
 connectToDatabase();
 
 const db = client.db('movies');
-
-app.use(cors());
 app.use(express.json());
 
 app.get('/movies', async (req, res) => {
