@@ -121,7 +121,7 @@ export const CardDetail = () => {
         <form onSubmit={handleSubmit}>
           <div className='detail_main_block'>
           <img
-            src="./bigImg.png"
+            src="./post.jpg"
             alt="moviePhoto"
             className="detail_image"
           >
